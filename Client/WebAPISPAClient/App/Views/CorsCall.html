@@ -1,0 +1,21 @@
+﻿<div ng-init="populate()">
+    <p class="error">{{error}}</p>
+    <p>{{loadingMessage}}</p>
+    <div class="panel">
+        <div class="input-group">
+            The data below comes from a secure, CORS enabled call to a Web API. The web service is reading all the claims received from the JS client and returning them:
+        </div>
+        <table class="table table-striped">
+            <tbody>
+                <tr data-ng-repeat="item in corsCallList">
+                    <td>
+                        <p>{{item}}</p>
+                    </td>
+                    <td>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
