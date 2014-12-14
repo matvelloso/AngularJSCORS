@@ -49,7 +49,7 @@ After uploading them, make sure the URLs match what you have in the files (alway
 For every resource you access, you need a different access token. Turns out ADAL.js does that for you. Look at the app.js and how it sets an array of endpoints so ADAL knows these will require access tokens and handle that for you.
 
 
-<b>This you should NOT do:</b> <br /><br />
+<b>Things you should NOT do:</b> <br /><br />
 1-There are many ways you can enable CORS on Web API, from manually adding the headers on web.config to use OWIN cors Nuget or even the Web API one. Pick one, but only one. If you enable it in multiple ways, multiple repeated headers will be generated and it will break JavaScript.<br /><br />
 2-Azure Websites have now a new option in the portal in the configuration tab named "authentication/authorization" with a button saying "configure". <b>DON'T ENABLE THIS</b>. It will force all requests to be authenticated and the problem with CORS is that all the preflight requests (method=OPTIONS) will also be redirected to logon which will never work.<br /><br />
 3-Don't trust the browser. Clear all cache between attempts or you will never know if your code is working.<br /><br />
