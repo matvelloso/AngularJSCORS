@@ -36,13 +36,16 @@ Upload the manifest back.
 <b>Step 3: Update the client app permissions</b> <br /><br />
 Go to the client app settings on Azure AD and in the permissions area, add the server app you just configured (that's why you did step 2, so it will show up).
 
-<b>Step 4: Update client ID and URLs</b> <br /><br />
+<b>Step 4: Enable implicit flow for the client app</b> <br /><br />
+Still at the client app settings on Azure AD, download the app manifest and update the oauth2AllowImplicitFlow property to true. This is not surfaced in the portal UI so has to be done via the manifest as well. Upload the manifest back to the application at the portal.
+
+<b>Step 5: Update client ID and URLs</b> <br /><br />
 On both the client and the server, update the client IDs and URLs so they match your client IDs and URLs. There are //TODO comments at the points that need changes.
 
-<b>Step 5: Upload the client and server to separate azure websites</b> <br /><br />
+<b>Step 6: Upload the client and server to separate azure websites</b> <br /><br />
 After uploading them, make sure the URLs match what you have in the files (always use HTTPS for the URLs).
 
-<b>Step 6: Set endpoints on ADAL.js initialization</b> <br /><br />
+<b>Step 7: Set endpoints on ADAL.js initialization</b> <br /><br />
 For every resource you access, you need a different access token. Turns out ADAL.js does that for you. Look at the app.js and how it sets an array of endpoints so ADAL knows these will require access tokens and handle that for you.
 
 
