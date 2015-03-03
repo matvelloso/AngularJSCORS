@@ -19,7 +19,7 @@ angular.module('corsApp', ['ngRoute','AdalAngular'])
         "https://corsenabled3.azurewebsites.net/": "670eef84-900f-475c-beab-53e0b1e6c333"
     };
 
-    //TODO: Replace these by yiour tenant and client ID after having created the Azure AD applications
+    //TODO: Replace these by your tenant and client ID after having created the Azure AD applications
     adalProvider.init(
         {
             tenant: 'ted1.onmicrosoft.com',
