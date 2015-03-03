@@ -9,6 +9,7 @@ using System.Web.Http.Cors;
 
 namespace CorsEnabled3.Controllers
 {
+
     //TODO: Replace this URL by your client URL. Never end this with a '/'. Ever.
     [EnableCors("https://corsenabledclient3.azurewebsites.net", "*", "*", SupportsCredentials = true)]
     [Authorize]

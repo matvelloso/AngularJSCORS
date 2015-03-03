@@ -58,6 +58,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\CorsEnabledClient3 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\CorsEnabledClient3 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -66,7 +68,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\Scripts\adal.js" />
+    <Content Include="App\Scripts\adal-angular.min.js" />
+    <Content Include="App\Scripts\adal.min.js" />
     <Content Include="App\Scripts\app.js" />
     <Content Include="App\Scripts\homeCtrl.js" />
     <Content Include="App\Scripts\indexCtrl.js" />

@@ -16,7 +16,7 @@ angular.module('corsApp', ['ngRoute','AdalAngular'])
 
     //TODO: The endpoints setting ensures ADAL.js will automatically acquire the access tokens transparently during requests.
     var endpoints = {
-        "https://corsenabled3.azurewebsites.net/": "https://corsenabled3.azurewebsites.net/",
+        "https://corsenabled3.azurewebsites.net/": "670eef84-900f-475c-beab-53e0b1e6c333"
     };
 
     //TODO: Replace these by yiour tenant and client ID after having created the Azure AD applications
