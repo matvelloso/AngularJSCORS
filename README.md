@@ -55,6 +55,7 @@ For every resource you access, you need a different access token. Turns out ADAL
 3-Don't trust the browser. Clear all cache between attempts or you will never know if your code is working.<br /><br />
 4-Don't use "*" in the allowed origins. Be specific about the URLs. Don't ever end an allowed origin URL with "/"<br /><br />
 5-The current version of ADAL is blended into Angular JS. Don't fight it. Use Angular and setup the routes accordingly.<br /><br />
+6-*Edited: Make sure you use HTTPS on both endpoints, the client and the server. We've got some people stuck at this. Defaulting everything to SSL makes it easier to configure, test and keeps you clear from some potential errors.<br/><br/>
 
 
 
