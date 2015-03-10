@@ -218,10 +218,6 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <None Include="Properties\PublishProfiles\corsenabled3 - FTP %282%29.pubxml" />
-    <None Include="Properties\PublishProfiles\corsenabled3 - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\corsenabled3 - Web Deploy %282%29.pubxml" />
-    <None Include="Properties\PublishProfiles\corsenabled3 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\corsenabled3.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

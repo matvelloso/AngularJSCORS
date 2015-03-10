@@ -7,7 +7,23 @@ angular.module('corsApp')
 
     $scope.populate = function () {
 
-        corsCallSvc.getItems().success(function (result) {
+        //corsCallSvc.getItems().success(function (result) {
+        //    $scope.corsCallList = result;
+        //    $scope.loadingMessage = "";
+        //}).error(function (err) {
+        //    $scope.error = err;
+        //    $scope.loadingMessage = "";
+        //});
+
+        //corsCallSvc.postItems().success(function (result) {
+        //    $scope.corsCallList = result;
+        //    $scope.loadingMessage = "";
+        //}).error(function (err) {
+        //    $scope.error = err;
+        //    $scope.loadingMessage = "";
+        //});
+
+        corsCallSvc.putItems().success(function (result) {
             $scope.corsCallList = result;
             $scope.loadingMessage = "";
         }).error(function (err) {

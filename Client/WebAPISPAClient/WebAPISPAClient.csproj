@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\corsenabledclient3 %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\CorsEnabledClient3 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\CorsEnabledClient3 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
