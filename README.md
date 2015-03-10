@@ -7,6 +7,9 @@ Example of Angular JS SPA using ADAL.JS for calling a secure, Azure Active Direc
 This project contains two Visual Studio Soluitions:<br /><br />
 <b>WebAPISPAClient:</b> An Angular JS Single Page Application project that uses ADAL.js in order to authenticate against Azure Active Directory.<br /><br />
 <b>CorsEnabled3:</b> A Asp.Net Web API project that requires an access token from Azure Active Directory, having enabled CORS for the client project to be able to make calls to it.<br /><br />
+
+*Update from 3/10/2015: I've added support for POST and PUT as folks told me they had problems enabling them. Also changed the audience setting to match the client id of the called app as some people also had problems in that area. This should make the sample smoother when you run it. <br /><br />
+
 <h2>How do I make this work for me?</h2><br />
 
 <b>Step 1: Setup Azure AD</b> <br /><br />
