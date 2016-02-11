@@ -17,7 +17,7 @@ Go to your Azure subscription, Azure Active Directory, and create two <b>web</b>
 The first app is the client and the second is the server (give them names that won't confuse you later)
 
 <b>Step 2: Change the manifest of the server application</b> <br /><br />
-Go to the server application on Azure AD and download the manifest. Replace the oauth2permissions part with the sample below (<b>remember to use the class ID from the client application you created</b>)<br />
+Go to the server application on Azure AD and download the manifest. Replace the oauth2permissions part with the sample below (<b>remember to use the client ID from the client application you created</b>)<br />
 
   &quot;oauth2Permissions&quot;: [<br />
     {<br />
